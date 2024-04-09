@@ -1,0 +1,82 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.board-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #d3d6da;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wrong {
+  background: #787c7e;
+  color: white;
+  animation: myAnimation 0.1s; /* 정답을 틀린 블록에만 애니메이션을 적용할 클래스 */
+}
+
+@keyframes myAnimation {
+  0% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+.finish {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 0vh;
+  left: 23vw;
+  background-color: rgba(194, 255, 136, 0.5);
+  width: 800px;
+  height: 100%; /* 높이를 부모 요소의 100%로 설정 */
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.finish-win {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.win {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 0vh;
+  left: 23vw;
+  background-color: rgba(200, 200, 136, 0.5);
+  width: 800px;
+  height: 800px;
+}
+
+@media screen and (max-width: 500px) {
+}

@@ -1,0 +1,58 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.word-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.word-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e7e7;
+  border: 3px solid #d3d6da;
+  border-radius: 20px;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.word-block.wide {
+  font-size: small;
+  width: 70px;
+}
+
+.back-space-icon {
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*footer 키보드 움직임에 대한*/
+.click-keyboard {
+  animation: keyboard 0.1s;
+}
+
+@keyframes keyboard {
+  0% {
+    transform: translateY(-8x);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
